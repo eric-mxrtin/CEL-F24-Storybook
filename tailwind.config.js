@@ -27,6 +27,19 @@ export default {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },
+      fontWeight: {
+        light: '300',
+        regular: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+      },
+      fontSize: {
+        sm: '14px',
+        input: '15px',
+        base: '16px',
+        lg: '18px'
+      },
       colors: {
         blue: {
           '50': '#E0E9F8',

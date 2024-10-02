@@ -24,8 +24,8 @@ export default {
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary = {
   args: {
-    label: 'dropdown',
-    items: ['1', '2', '3']
+    label: 'Dropdown',
+    items: ['Item 1', 'Item 2', 'Item 3']
   },
 };
 

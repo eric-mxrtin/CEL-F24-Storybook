@@ -1,5 +1,5 @@
 import "preline/dist/preline";
-import { Dropdown } from "./Dropdown";
+import { Dropdown } from "./Dropdown/Dropdown";
 
 export const Navbar = () => {
   return (
@@ -65,7 +65,7 @@ export const Navbar = () => {
             aria-labelledby="hs-navbar-example-collapse"
           >
             <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-              <Dropdown label={"Account"} items={["1", "2", "3"]}/>
+              <Dropdown label={"e24marti"} items={["Settings", "Dashboard", "Sign Out"]}/>
             </div>
           </div>
         </nav>
