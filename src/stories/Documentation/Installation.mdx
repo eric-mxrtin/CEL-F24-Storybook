@@ -2,21 +2,31 @@
 
 import { Meta } from '@storybook/blocks';
 
-<Meta title="Installation" />
+<Meta title="Configuration/Installation" />
 
 # Installation
 ---
 To install Storybook in your project, follow these steps:
 
-### 1. Install Tailwind CSS with Create React App
+### 1. Create your React App
 
-Setting up Tailwind CSS in a Create React App project.
+Initialize a react app using either Vite or Create React App
 
-Create project and cd into it
+Using Vite: (then follow the prompts)
 ```bash
-npx create-react-app my-project
-cd my-project
+npm create vite@latest my-example-project -- --react vue
 ```
+
+Using Create React App:
+```bash
+npx create-react-app my-example-project
+```
+
+Then, cd into your directory.
+
+### 2. Install Tailwind CSS with Create React App
+
+Setting up Tailwind CSS within a React application.
 
 Install tailwind and generate your config file
 ```bash

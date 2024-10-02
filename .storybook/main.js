@@ -9,6 +9,7 @@ const config = {
     "@storybook/addon-interactions",
     '@storybook/addon-styling-webpack',
     '@storybook/addon-docs',
+    '@storybook/addon-viewport',
   ],
   framework: {
     name: "@storybook/react-vite",

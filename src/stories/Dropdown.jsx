@@ -3,7 +3,7 @@ import "preline/dist/preline";
 import { HSDropdown } from "preline";
 import { useEffect } from "react";
 
-export const Dropdown = () => {
+export const Dropdown = ({ label, items }) => {
   useEffect(() => {
     HSDropdown.autoInit();
   }, []);
@@ -18,7 +18,7 @@ export const Dropdown = () => {
           aria-expanded="false"
           aria-label="Dropdown"
         >
-          Actions
+          {label}
           <svg
             class="hs-dropdown-open:rotate-180 size-4"
             xmlns="http://www.w3.org/2000/svg"
@@ -42,30 +42,15 @@ export const Dropdown = () => {
           aria-labelledby="hs-dropdown-default"
         >
           <div class="p-1 space-y-0.5">
-            <a
-              class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-              href="#"
-            >
-              Newsletter
-            </a>
-            <a
-              class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-              href="#"
-            >
-              Purchases
-            </a>
-            <a
-              class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-              href="#"
-            >
-              Downloads
-            </a>
-            <a
-              class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-              href="#"
-            >
-              Team Account
-            </a>
+            {items.map((i, index) => (
+              <a
+                class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                href="#"
+                key={index}
+              >
+                {i}
+              </a>
+            ))}
           </div>
         </div>
       </div>

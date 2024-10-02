@@ -18,14 +18,25 @@ export default {
       description: 'label for the button',
     },
     type: {
-      description: 'default / primary / outline / ghost / soft / white / link',
+      options: ['default', 'primary', 'outline', 'ghost', 'soft', 'white', 'link'],
+      control: {type: 'radio'},
     },
+    color: {
+      options: ['blue', 'red', 'yellow', 'green', 'purple', 'gray'],
+      control: {type: 'radio'},
+    },
+    disabled: {
+      options: [true, false],
+      control: {type: 'radio'}
+    }
   },
 };
+
 
 export const Primary = {
   args: {
     label: 'Button',
+    color: 'blue'
   },
 };
 
@@ -33,6 +44,7 @@ export const Outline = {
   args: {
     label: 'Outline',
     type: "outline",
+    color: 'blue'
   },
 };
 
@@ -40,6 +52,7 @@ export const Ghost = {
   args: {
     label: 'Outline',
     type: "ghost",
+    color: 'blue'
   },
 };
 
@@ -47,6 +60,7 @@ export const Soft = {
   args: {
     label: 'Outline',
     type: "soft",
+    color: 'blue'
   },
 };
 
@@ -54,6 +68,7 @@ export const White = {
   args: {
     label: 'Outline',
     type: "white",
+    color: 'blue'
   },
 };
 
@@ -61,6 +76,7 @@ export const Link = {
   args: {
     label: 'Outline',
     type: "link",
+    color: 'blue'
   },
 };
 

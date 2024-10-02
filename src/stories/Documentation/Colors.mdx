@@ -1,0 +1,57 @@
+import tailwindConfig from "../../../tailwind.config.js"; // 
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+
+<Meta title="Foundations/Colors" />
+<p className="font-bold p-4 text-purple-500">Hello</p>
+
+<ColorPalette>
+  <ColorItem
+    title="Gray"
+    subtitle="Primary Gray"
+    colors={{
+      50: '#F5F6F7',
+      100: '#EBEDF1',
+      200: '#D3D8DE',
+      300: '#BAC1CB',
+      400: '#828FA1',
+      500: '#64748B',
+      600: '#5A687D',
+      700: '#37404C',
+      800: '#323A46',
+      900: '#232921',
+    }}
+  />
+  <ColorItem
+    title="Red"
+    subtitle="Warning Red"
+    colors={{
+      50: '#FDE8E8',
+      100: '#F4B7B7',
+      200: '#EB8383',
+      300: '#E66565',
+      400: '#E14646',
+      500: '#DE3131',
+      600: '#C82C2C',
+      700: '#B22727',
+      800: '#851D1D',
+      900: '#4E1111',
+    }}
+  />
+</ColorPalette>
+
+  {/* <ColorItem
+    title="Blue"
+    subtitle="Primary Blue"
+    colors={{
+      50: themeColors.blue['50'],
+      100: themeColors.blue['100'],
+      200: themeColors.blue['200'],
+      300: themeColors.blue['300'],
+      400: themeColors.blue['400'],
+      500: themeColors.blue['500'],
+      600: themeColors.blue['600'],
+      700: themeColors.blue['700'],
+      800: themeColors.blue['800'],
+      900: themeColors.blue['900'],
+    }}
+  /> */}
