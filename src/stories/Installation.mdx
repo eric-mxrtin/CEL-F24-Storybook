@@ -1,0 +1,95 @@
+{/* Installation.mdx */}
+
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Installation" />
+
+# Installation
+---
+To install Storybook in your project, follow these steps:
+
+### 1. Install Tailwind CSS with Create React App
+
+Setting up Tailwind CSS in a Create React App project.
+
+Create project and cd into it
+```bash
+npx create-react-app my-project
+cd my-project
+```
+
+Install tailwind and generate your config file
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+Configure your template paths within tailwind.config.js
+```bash
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // add this!
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Add tailwind directives to ./src/index.CSS
+```bash
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Start your build process
+```bash
+npm run start
+```
+
+Test Tailwind in your project
+```bash
+export default function App() {
+  return (
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
+}
+```
+
+### 2. Install Preline
+
+Quick Setup for Preline
+
+Install preline ui
+```bash
+npm i preline
+```
+
+Add the Preline UI plugin in 'tailwind.config.js'
+```bash
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    'node_modules/preline/dist/*.js',
+  ],
+  plugins: [
+    // require('@tailwindcss/forms'),
+      require('preline/plugin'),
+  ],
+}
+```
+
+Add the Preline UI script to the end of your body tag in index.html
+```bash
+<script src="./node_modules/preline/dist/preline.js"></script>
+```
+
+In any files where you use JS for preline components, import this: 
+```bash
+import "preline/dist/preline";
+```
