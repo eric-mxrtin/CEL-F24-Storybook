@@ -4,11 +4,11 @@ import { Dropdown } from "./Dropdown/Dropdown";
 export const Navbar = () => {
   return (
     <>
-      <header class="divide-y relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 dark:bg-neutral-800">
+      <header class="border-b-2 border-gray-100 divide-y relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-5 px-8 dark:bg-neutral-800">
         <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
           <div class="flex items-center justify-between">
             <a
-              class="flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80"
+              class="flex-none text-xl text-blue-500 font-semibold dark:text-white focus:outline-none focus:opacity-80"
               href="#"
               aria-label="Brand"
             >

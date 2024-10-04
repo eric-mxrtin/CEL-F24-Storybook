@@ -2,7 +2,7 @@ import { Breadcrumb } from "./Breadcrumb";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: 'Components/Breadcrumb',
+  title: 'Documented Components/Breadcrumb',
   component: Breadcrumb,
   parameters: {
     docs: {

@@ -12,14 +12,18 @@ Outlining the workflow for how components are handed off from design to dev.
 
 This entails editing the base UI from Preline to match CEL's branding. Ensure that local variables and styles are used!
 
-### 2. Edit the base preline component in React to match the figma style.
+Typically, this process consists of only changing typography, padding, applying color variables, and removing any unnecessary variants (ex. dividers, excessive icon usage, additional dropdowns...)
 
-Change the tailwind class names to apply these styles.
+### 2. Edit the base preline component in React to match the Figma style.
+
+Change the tailwind class names to apply these styles that were changed in Figma. Use variables when possible to ensure a single source of truth.
+
+Ex. if the font style in Figma is **Input/Semi Bold** then apply the class names **text-input and font-semibold**.
 
 ### 3. Create a Storybook story for this component.
 
-Create the associated Properties to manage the component's various states.
+Create the associated Properties to manage the component's various states. These properties will typically change things such as color and content (such as placeholder text or labels).
 
 ### 4. Create the Storybook documentation for this component..
 
-Outline the components purpose and usage guidelines
+Outline the components purpose and usage guidelines. This entails both how the component is used within a design context, and how developers should insert this component within their code.

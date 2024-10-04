@@ -38,7 +38,10 @@ export default {
         sm: '14px',
         input: '15px',
         base: '16px',
-        lg: '18px'
+        lg: '18px',
+        xl: '20px',
+        '2xl': '24px',
+        
       },
       colors: {
         blue: {
@@ -78,7 +81,7 @@ export default {
           '900': '#4E1111',
         },
         green: {
-          '50': '#9ED1C0',
+          '50': '#C8E3DA',
           '100': '#9DCDBD',
           '200': '#63AF95',
           '300': '#3C9B7B',

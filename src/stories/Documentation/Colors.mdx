@@ -1,13 +1,27 @@
-import tailwindConfig from "../../../tailwind.config.js"; // 
 import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
 
 <Meta title="Foundations/Colors" />
-<p className="font-bold p-4 text-purple-500">Hello</p>
 
 <ColorPalette>
   <ColorItem
+    title="Blue"
+    subtitle="Primary Brand Color"
+    colors={{
+      50: '#E0E9F8',
+      100: '#A3BEEB',
+      200: '#709AE0',
+      300: '#477DD7',
+      400: '#3C76D4',
+      500: '#326FD2',
+      600: '#2D64BD',
+      700: '#2859A8',
+      800: '#214889',
+      900: '#1C3D74',
+    }}
+  />
+  <ColorItem
     title="Gray"
-    subtitle="Primary Gray"
+    subtitle="Primary Supporting Color"
     colors={{
       50: '#F5F6F7',
       100: '#EBEDF1',
@@ -22,8 +36,24 @@ import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
     }}
   />
   <ColorItem
+    title="Green"
+    subtitle="Success Indicator"
+    colors={{
+      50: '#C8E3DA',
+      100: '#9DCDBD',
+      200: '#63AF95',
+      300: '#3C9B7B',
+      400: '#238F6B',
+      500: '#0B825A',
+      600: '#096F4D',
+      700: '#086244',
+      800: '#07553B',
+      900: '#053A28',
+    }}
+  />
+  <ColorItem
     title="Red"
-    subtitle="Warning Red"
+    subtitle="Danger Indicator"
     colors={{
       50: '#FDE8E8',
       100: '#F4B7B7',
@@ -37,21 +67,36 @@ import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
       900: '#4E1111',
     }}
   />
-</ColorPalette>
-
-  {/* <ColorItem
-    title="Blue"
-    subtitle="Primary Blue"
+  <ColorItem
+    title="Yellow"
+    subtitle="Warning Indicator"
     colors={{
-      50: themeColors.blue['50'],
-      100: themeColors.blue['100'],
-      200: themeColors.blue['200'],
-      300: themeColors.blue['300'],
-      400: themeColors.blue['400'],
-      500: themeColors.blue['500'],
-      600: themeColors.blue['600'],
-      700: themeColors.blue['700'],
-      800: themeColors.blue['800'],
-      900: themeColors.blue['900'],
+      50: '#FDECCE',
+      100: '#FBD89D',
+      200: '#FACA79',
+      300: '#F8B648',
+      400: '#F6A823',
+      500: '#F59E0B',
+      600: '#DD8E0A',
+      700: '#C47E09',
+      800: '#935F07',
+      900: '#4A2F03',
     }}
-  /> */}
+  />
+  <ColorItem
+    title="Purple"
+    subtitle="Supporting Secondary Color"
+    colors={{
+      50: '#E8E5F6',
+      100: '#C1BBE6',
+      200: '#9B90D6',
+      300: '#8476CD',
+      400: '#7465C6',
+      500: '#6554C0',
+      600: '#5B4CAD',
+      700: '#4C3F90',
+      800: '#3D3273',
+      900: '#28224D',
+    }}
+  />
+</ColorPalette>

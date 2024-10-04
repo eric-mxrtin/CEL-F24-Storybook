@@ -2,7 +2,7 @@ import { Button } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: 'Components/Button',
+  title: 'Documented Components/Button',
   component: Button,
   parameters: {
     docs: {
@@ -20,14 +20,16 @@ export default {
     type: {
       options: ['default', 'primary', 'outline', 'ghost', 'soft', 'white', 'link'],
       control: {type: 'radio'},
+      description: 'type of the button, passed in as a string. defaults to solid.',
     },
     color: {
-      options: ['blue', 'red', 'yellow', 'green', 'purple', 'gray'],
-      control: {type: 'radio'},
+      control: {type: 'color', presetColors: ['blue', 'red', 'yellow', 'green', 'purple', 'gray']},
+      type: "string"
     },
     disabled: {
       options: [true, false],
-      control: {type: 'radio'}
+      control: {type: 'radio'},
+      description: 'active or disabled state of button. defaults to active, passed in as a boolean',
     }
   },
 };
@@ -79,4 +81,3 @@ export const Link = {
     color: 'blue'
   },
 };
-

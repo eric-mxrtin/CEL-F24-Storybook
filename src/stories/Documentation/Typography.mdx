@@ -9,21 +9,19 @@ export const typography = {
     primary: 'Poppins'
   },
   weight: {
+    light: '300',
     regular: '400',
+    medium: '500',
+    semibold: '600',
     bold: '700',
-    extrabold: '800',
-    black: '900',
   },
   size: {
-    s1: 12,
-    s2: 14,
-    s3: 16,
-    m1: 20,
-    m2: 24,
-    m3: 28,
-    l1: 32,
-    l2: 40,
-    l3: 48,
+    sm: '14',
+    input: '15',
+    base: '16',
+    lg: '18',
+    xl: '20',
+    xxl: '24'
   },
 };
 
@@ -33,80 +31,83 @@ export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing el
 
 **Font:** Poppins
 
-**Weights:** 400 (regular), 700 (bold), 800 (extrabold), 900 (black)
+**Weights:** 300 (light), 400 (regular), 500 (medium), 600 (semibold), 700 (bold)
+
+**Sizes:** 14 (sm), 15 (input), 16 (base), 18 (lg), 20 (xl), 24 (2xl)
+
+### Light
+Short blurb explaining the usage guidelines for this typeset.
+<Typeset
+  fontSizes={[
+    typography.size.sm,
+    typography.size.input,
+    typography.size.base,
+    typography.size.lg,
+    typography.size.xl,
+    typography.size.xxl,
+  ]}
+  fontWeight={Number(typography.weight.light)}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
 
 ### Regular
-_Typically used for body text, paragraphs, and descriptions. This weight ensures readability and clarity without drawing too much attention._
+Short blurb explaining the usage guidelines for this typeset.
 <Typeset
   fontSizes={[
-    Number(typography.size.s1),
-    Number(typography.size.s2),
-    Number(typography.size.s3),
-    Number(typography.size.m1),
-    Number(typography.size.m2),
-    Number(typography.size.m3),
-    Number(typography.size.l1),
-    Number(typography.size.l2),
-    Number(typography.size.l3),
+    typography.size.sm,
+    typography.size.input,
+    typography.size.base,
+    typography.size.lg,
+    typography.size.xl,
+    typography.size.xxl,
   ]}
-  fontWeight={typography.weight.regular}
+  fontWeight={Number(typography.weight.regular)}
   sampleText={SampleText}
   fontFamily={typography.type.primary}
 />
-
+### Medium
+Short blurb explaining the usage guidelines for this typeset.
+<Typeset
+  fontSizes={[
+    typography.size.sm,
+    typography.size.input,
+    typography.size.base,
+    typography.size.lg,
+    typography.size.xl,
+    typography.size.xxl,
+  ]}
+  fontWeight={Number(typography.weight.medium)}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+### Semi Bold
+Short blurb explaining the usage guidelines for this typeset.
+<Typeset
+  fontSizes={[
+    typography.size.sm,
+    typography.size.input,
+    typography.size.base,
+    typography.size.lg,
+    typography.size.xl,
+    typography.size.xxl,
+  ]}
+  fontWeight={Number(typography.weight.semibold)}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
 ### Bold
-_Used for headings, subheadings, or to emphasize important information. This weight helps highlight content that requires more focus from the reader._
+Short blurb explaining the usage guidelines for this typeset.
 <Typeset
   fontSizes={[
-    Number(typography.size.s1),
-    Number(typography.size.s2),
-    Number(typography.size.s3),
-    Number(typography.size.m1),
-    Number(typography.size.m2),
-    Number(typography.size.m3),
-    Number(typography.size.l1),
-    Number(typography.size.l2),
-    Number(typography.size.l3),
+    typography.size.sm,
+    typography.size.input,
+    typography.size.base,
+    typography.size.lg,
+    typography.size.xl,
+    typography.size.xxl,
   ]}
-  fontWeight={typography.weight.bold}
-  sampleText={SampleText}
-  fontFamily={typography.type.primary}
-/>
-
-### ExtraBold
-_Suitable for call-to-action elements like buttons or banners. This weight is perfect for creating visual hierarchy and drawing attention to key actions._
-<Typeset
-  fontSizes={[
-    Number(typography.size.s1),
-    Number(typography.size.s2),
-    Number(typography.size.s3),
-    Number(typography.size.m1),
-    Number(typography.size.m2),
-    Number(typography.size.m3),
-    Number(typography.size.l1),
-    Number(typography.size.l2),
-    Number(typography.size.l3),
-  ]}
-  fontWeight={typography.weight.extrabold}
-  sampleText={SampleText}
-  fontFamily={typography.type.primary}
-/>
-
-### Black
-_This weight is rarely used but can be applied for very prominent text elements, such as hero section titles or product names on promotional pages, where maximum impact is needed._
-<Typeset
-  fontSizes={[
-    Number(typography.size.s1),
-    Number(typography.size.s2),
-    Number(typography.size.s3),
-    Number(typography.size.m1),
-    Number(typography.size.m2),
-    Number(typography.size.m3),
-    Number(typography.size.l1),
-    Number(typography.size.l2),
-    Number(typography.size.l3),
-  ]}
-  fontWeight={typography.weight.black}
+  fontWeight={Number(typography.weight.bold)}
   sampleText={SampleText}
   fontFamily={typography.type.primary}
 />

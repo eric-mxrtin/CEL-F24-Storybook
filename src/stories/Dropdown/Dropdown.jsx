@@ -4,14 +4,17 @@ import { HSDropdown } from "preline";
 import { useEffect } from "react";
 import { Button } from "../Button/Button";
 
-export const Dropdown = ({ label, items }) => {
+export const Dropdown = ({ label, items, dropRight }) => {
   useEffect(() => {
     HSDropdown.autoInit();
   }, []);
   return (
     <>
-      <div class="hs-dropdown relative inline-flex">
-
+      <div
+        class={`hs-dropdown relative 
+       
+${dropRight ? "[--placement:bottom-right]" : "[--placement:bottom-left]"}`}
+      >
         <button
           id="hs-dropdown-default"
           type="button"
@@ -36,7 +39,6 @@ export const Dropdown = ({ label, items }) => {
             <path d="m6 9 6 6 6-6" />
           </svg>
         </button>
-
 
         <div
           class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
