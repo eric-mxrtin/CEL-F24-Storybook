@@ -24,11 +24,10 @@ export default {
     },
     color: {
       control: {type: 'color', presetColors: ['blue', 'red', 'yellow', 'green', 'purple', 'gray']},
-      type: "string"
     },
     disabled: {
       options: [true, false],
-      control: {type: 'radio'},
+      control: {type: 'boolean'},
       description: 'active or disabled state of button. defaults to active, passed in as a boolean',
     }
   },

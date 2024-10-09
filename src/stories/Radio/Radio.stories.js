@@ -1,8 +1,8 @@
 import { ArgTypes } from '@storybook/blocks';
-import { Radio } from './Radio/Radio';
+import { Radio } from './Radio';
 
 export default {
-  title: 'Components/Radio',
+  title: 'Documented Components/Radio',
   component: Radio,
   parameters: {
     docs: {

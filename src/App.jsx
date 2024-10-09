@@ -5,6 +5,7 @@ import { Button } from "./stories/Button/Button";
 import { Navbar } from "./stories/Navbar";
 import { Footer } from "./stories/Footer/Footer";
 import { Radio } from "./stories/Radio";
+import { Badge } from "./stories/Badge/Badge";
 
 function App() {
   return (

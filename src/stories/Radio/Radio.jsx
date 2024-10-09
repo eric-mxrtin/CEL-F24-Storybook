@@ -3,7 +3,7 @@ import "preline/dist/preline";
 export const Radio = ({label, disabled}) => {
   return (
     <>
-      <div class="flex gap-2">
+      <div class={`flex gap-4 ${disabled ? 'opacity-50' : ''}`}>
         <input
           type="radio"
           name="hs-default-radio"
@@ -13,9 +13,7 @@ export const Radio = ({label, disabled}) => {
         />
         <label
           for="hs-default-radio"
-          class="text-sm text-gray-800 ms-2 dark:text-neutral-400
-          disabled:text-gray-200"
-          disabled={disabled}
+          class="text-input font-medium text-gray-800 ms-2 dark:text-neutral-400"
         >
           {label}
         </label>
