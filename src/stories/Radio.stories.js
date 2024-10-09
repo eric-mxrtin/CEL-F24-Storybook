@@ -7,7 +7,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: "Radio Element",
+        component: "Radio Input Element",
       },
     },
     layout: 'centered',
