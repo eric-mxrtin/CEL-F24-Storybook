@@ -15,7 +15,7 @@ export default {
   tags: ['autodocs'],
   argTypes: {
     type: {
-        options: ['default', 'outline'],
+        options: ['default', 'outline', 'soft'],
         control: {type: 'radio'},
         description: 'type of the badge, passed in as a string. defaults to solid.',
       },
@@ -38,5 +38,13 @@ export const Outline = {
     color: "blue",
     label: "Outline",
     type: "outline"
+  },
+};
+
+export const Soft = {
+  args: {
+    color: "blue",
+    label: "RETURNED WITH FEEDBACK",
+    type: "soft"
   },
 };
