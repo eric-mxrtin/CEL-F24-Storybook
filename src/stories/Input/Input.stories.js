@@ -34,6 +34,15 @@ export const Primary = {
   },
 };
 
+export const Light = {
+  args: {
+    placeholder: "Type here",
+    label: "Light input field",
+    type: "light",
+    disabled: false
+  },
+};
+
 export const Disabled = {
   args: {
     placeholder: "Enter username",

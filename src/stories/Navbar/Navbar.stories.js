@@ -2,7 +2,7 @@ import { Navbar } from './Navbar';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: 'Components/Navbar',
+  title: 'Documented Components/Navbar',
   component: Navbar,
   parameters: {
     docs: {

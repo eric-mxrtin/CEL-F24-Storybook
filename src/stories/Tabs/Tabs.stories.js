@@ -1,7 +1,7 @@
 import { Tabs } from './Tabs';
 
 export default {
-  title: 'Components/Tabs',
+  title: 'Documented Components/Tabs',
   component: Tabs,
   parameters: {
     docs: {

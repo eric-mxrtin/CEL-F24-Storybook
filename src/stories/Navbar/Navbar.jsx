@@ -1,5 +1,5 @@
 import "preline/dist/preline";
-import { Dropdown } from "./Dropdown/Dropdown";
+import { Dropdown } from "../Dropdown/Dropdown";
 
 export const Navbar = () => {
   return (
