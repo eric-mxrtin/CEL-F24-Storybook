@@ -19,7 +19,11 @@ export default {
       description: 'label for the input',
     },
     disabled:{
-
+      description: 'disabled state of input',
+    },
+    size: {
+      options: ["small", "default"],
+      control: {type: 'radio'},
     }
   },
   tags: ['autodocs'],
@@ -48,5 +52,13 @@ export const Disabled = {
     placeholder: "Enter username",
     label: "Username",
     disabled: true
+  },
+};
+
+export const Small = {
+  args: {
+    placeholder: "Enter username",
+    label: "Username",
+    size: "small",
   },
 };
