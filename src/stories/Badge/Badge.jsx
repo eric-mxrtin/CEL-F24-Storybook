@@ -5,16 +5,9 @@ export const Badge = ( { type, color, label } ) => {
         <span className={`inline-flex items-center gap-x-1.5 py-1.5 px-2.5 rounded-md text-xs font-medium border border-${color}-500 text-${color}-500`}>{label}</span>
     )
  }  
-
- if(type == "soft") {
-    return (
-        <span class={`inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-${color}-50 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500`}>{label}</span>
-    )
- }
-
  if (type == "soft") {
     return (
-        <span className={`inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-${color}-100 text-${color}-800 dark:bg-${color}-800/30 dark:text-${color}-500`}>{label}</span>
+        <span className={`inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-${color}-50 text-${color}-800 dark:bg-${color}-800/30 dark:text-${color}-500`}>{label}</span>
     )
  }
  return (
