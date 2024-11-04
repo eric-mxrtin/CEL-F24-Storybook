@@ -44,11 +44,7 @@ export const Outline = {
 export const Soft = {
   args: {
     color: "blue",
-<<<<<<< HEAD
     label: "Soft",
-=======
-    label: "RETURNED WITH FEEDBACK",
->>>>>>> b4ffc2b9d4f1b5cc5af13c3856bfc99c5553e4c8
     type: "soft"
   },
 };
