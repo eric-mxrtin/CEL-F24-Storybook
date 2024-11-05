@@ -4,7 +4,7 @@ import { HSDropdown } from "preline";
 import { useEffect } from "react";
 import { Button } from "../Button/Button";
 
-export const Dropdown = ({ label, items, dropRight }) => {
+export const Dropdown = ({ label, items, dropRight, iconLeft }) => {
   useEffect(() => {
     HSDropdown.autoInit();
   }, []);
@@ -23,6 +23,7 @@ ${dropRight ? "[--placement:bottom-right]" : "[--placement:bottom-left]"}`}
           aria-expanded="false"
           aria-label="Dropdown"
         >
+          {iconLeft}
           {label}
           <svg
             class="hs-dropdown-open:rotate-180 size-4"

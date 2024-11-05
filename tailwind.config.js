@@ -20,6 +20,10 @@ export default {
       pattern: /bg-(red|green|blue|yellow|purple|pink|indigo|gray)-(900|800|700|600|500|400|300|200|100|50)/,
       variants: ['lg', 'hover', 'focus', 'lg:hover'],
     },
+    {
+      pattern: /ring-(red|green|blue|yellow|purple|pink|indigo|gray)-(900|800|700|600|500|400|300|200|100|50)/,
+      variants: ['lg', 'hover', 'focus', 'lg:hover'],
+    },
     // Add more patterns as needed
   ],
   theme: {

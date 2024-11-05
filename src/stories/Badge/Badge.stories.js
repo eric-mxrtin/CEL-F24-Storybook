@@ -19,6 +19,17 @@ export default {
         control: {type: 'radio'},
         description: 'type of the badge, passed in as a string. defaults to solid.',
       },
+    size: {
+        options: ['default', 'small', 'large'],
+        control: {type: 'radio'},
+        description: 'size passed in as a string, defaults to default.',
+      },
+    iconLeft: {
+        description: 'left icon passed in as a jsx component',
+      },
+    iconRight: {
+        description: 'right icon passed in as a jsx component',
+      },
     color: {
         control: {type: 'color', presetColors: ['blue', 'red', 'yellow', 'green', 'purple', 'gray']},
     },

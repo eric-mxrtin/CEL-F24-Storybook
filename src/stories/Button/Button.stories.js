@@ -17,6 +17,11 @@ export default {
     label: {
       description: 'label for the button',
     },
+    size: {
+      description: 'small or default size',
+      control: {type: 'radio'},
+      options: ['default', 'small'],
+    },
     type: {
       options: ['default', 'primary', 'outline', 'ghost', 'soft', 'white', 'link'],
       control: {type: 'radio'},
@@ -24,6 +29,12 @@ export default {
     },
     color: {
       control: {type: 'color', presetColors: ['blue', 'red', 'yellow', 'green', 'purple', 'gray']},
+    },
+    iconLeft:{
+      description: 'left icon passed in as a jsx component'
+    },
+    iconRight:{
+      description: 'right icon passed in as a jsx component'
     },
     disabled: {
       options: [true, false],
