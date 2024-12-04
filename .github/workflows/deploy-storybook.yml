@@ -3,7 +3,7 @@ name: Deploy Storybook to GitHub Pages
 on:
   push:
     branches:
-      - master  # Adjust if your default branch is different
+      - master
 
 jobs:
   build-and-deploy:
