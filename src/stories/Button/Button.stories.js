@@ -1,3 +1,4 @@
+import { User } from 'lucide-react';
 import { Button } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
@@ -47,47 +48,48 @@ export default {
 
 export const Primary = {
   args: {
-    label: 'Button',
-    color: 'blue'
+    children: 'Button',
   },
 };
 
 export const Outline = {
   args: {
-    label: 'Outline',
     type: "outline",
-    color: 'blue'
+    children: "Outline",
   },
 };
 
 export const Ghost = {
   args: {
-    label: 'Outline',
+    children: 'Ghost',
     type: "ghost",
-    color: 'blue'
   },
 };
 
 export const Soft = {
   args: {
-    label: 'Outline',
+    children: 'Soft',
     type: "soft",
-    color: 'blue'
   },
 };
 
 export const White = {
   args: {
-    label: 'Outline',
-    type: "white",
-    color: 'blue'
+    children: 'White',
+    type: "white"
   },
 };
 
-export const Link = {
+export const Disabled ={
   args: {
-    label: 'Outline',
-    type: "link",
-    color: 'blue'
-  },
-};
+    children: "Disabled",
+    disabled: true,
+  }
+}
+
+export const Small ={
+  args: {
+    children: "Small",
+    size: "small",
+  }
+}
