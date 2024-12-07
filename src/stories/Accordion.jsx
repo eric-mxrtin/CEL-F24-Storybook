@@ -56,7 +56,7 @@ export const Accordion = () => {
             <p class="text-gray-800 dark:text-neutral-200">
               <em>This is the third item's accordion body.</em> It is hidden by
               default, until the collapse plugin adds the appropriate classes
-              that we use to style each element. These classes control the
+              that we use to style each element! These classes control the
               overall appearance, as well as the showing and hiding via CSS
               transitions.
             </p>
