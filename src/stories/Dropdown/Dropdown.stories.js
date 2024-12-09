@@ -8,7 +8,7 @@ export default {
     layout: 'centered',
     docs: {
       description: {
-        component: 'A customizable Dropdown component that can be triggered by a button or any custom trigger. Supports left or right alignment and auto-closes on outside click.'
+        component: 'A customizable Dropdown component that can be triggered by a button or any custom trigger. Supports left or right dropdown alignment and auto-closes on outside click.'
       },
     },
   },
