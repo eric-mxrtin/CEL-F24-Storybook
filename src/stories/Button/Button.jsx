@@ -1,4 +1,5 @@
 import React from "react";
+import "preline/dist/preline";
 
 /** Primary UI component for user interaction */
 export const Button = ({
@@ -18,8 +19,8 @@ export const Button = ({
   const typeClassMap = {
     default: `border border-transparent bg-${color}-500 text-white hover:bg-${color}-700 focus:bg-${color}-700`,
     outline: `border border-${color}-200 text-${color}-500 hover:border-${color}-600 hover:text-${color}-600 focus:border-${color}-600 focus:text-${color}-600`,
-    ghost: `border border-transparent text-${color}-600 hover:bg-${color}-50 hover:text-${color}-800 focus:bg-${color}-50 focus:text-${color}-800`,
-    soft: `border border-transparent bg-${color}-50 text-${color}-800 hover:bg-${color}-200 focus:bg-${color}-200`,
+    ghost: `border border-transparent text-${color}-600 hover:bg-${color}-50 hover:text-${color}-800 focus:bg-${color}-100 focus:text-${color}-800`,
+    soft: `border border-transparent bg-${color}-50 text-${color}-800 hover:bg-${color}-100 focus:bg-${color}-200`,
     white: `border border-gray-200 bg-white text-${color}-600 shadow-sm hover:bg-gray-50 focus:bg-gray-50`,
     link: `border border-transparent text-${color}-600 hover:text-${color}-800 focus:text-${color}-800`,
   };

@@ -32,6 +32,7 @@ export const Dropdown = ({ children, trigger, dropRight }) => {
             type="white"
             color="gray"
             className="text-gray-800"
+            size="small"
           >
             Label
             <ChevronDown
