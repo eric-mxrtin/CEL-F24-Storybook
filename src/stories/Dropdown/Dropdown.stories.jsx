@@ -1,6 +1,6 @@
 import { Button } from "../Button/Button.jsx";
 import { Dropdown } from "./Dropdown.jsx";
-import { User, Settings, LogOut, ChevronDown } from "lucide-react";
+import { User, Settings, LogOut, ChevronDown, ArrowLeftFromLine, Bell, SendHorizonal } from "lucide-react";
 // Default export for Storybook configuration
 export default {
   title: 'Documented Components/Dropdown',
@@ -36,21 +36,21 @@ export const DropLeft = {
   >
     <a
       href="/profile"
-      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-100"
+      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-gray-100"
     >
       Profile
       <User size="14px" />
     </a>
     <a
       href="/settings"
-      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-100"
+      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-gray-100"
     >
       Settings
       <Settings size="14px" />
     </a>
     <a
       href="/"
-      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-100"
+      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-gray-100"
     >
       Log Out
       <LogOut size="14px" />
@@ -74,21 +74,21 @@ export const DropRight = {
   >
     <a
       href="/profile"
-      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-100"
+      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-gray-100"
     >
       Profile
       <User size="14px" />
     </a>
     <a
       href="/settings"
-      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-100"
+      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-gray-100"
     >
       Settings
       <Settings size="14px" />
     </a>
     <a
       href="/"
-      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-100"
+      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-gray-100"
     >
       Log Out
       <LogOut size="14px" />
@@ -107,6 +107,49 @@ export const DropRight = {
   },
 };
 
+export const CustomChildren = {
+  render: () => (
+    <Dropdown
+    dropRight={true}
+    trigger={
+      <Button size="small">
+        In Progress
+        <ChevronDown size="14px" />
+      </Button>
+    }
+  >
+    <a
+      href="/"
+      className="flex whitespace-nowrap justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-blue-50 hover:text-blue-800"
+    >
+      Return With Feedback
+      <ArrowLeftFromLine size="14px"/>
+    </a>
+    <a
+      href="/"
+      className="flex whitespace-nowrap justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-yellow-50 hover:text-yellow-800"
+    >
+      Notify Reviewers
+      <Bell size="14px" />
+    </a>
+    <a
+      href="/"
+      className="flex whitespace-nowrap justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-green-50 hover:text-green-800"
+    >
+      Submit for Approval
+      <SendHorizonal size="14px"/>
+    </a>
+  </Dropdown>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story: 'This story demonstrates using both a custom trigger and custom children. The custom children have unique hover background effects.'
+      },
+    },
+  },
+};
+
 export const CustomTrigger = {
   render: (args) => (
     <Dropdown {...args}
@@ -120,21 +163,21 @@ export const CustomTrigger = {
   >
     <a
       href="/profile"
-      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-100"
+      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-gray-100"
     >
       Profile
       <User size="14px" />
     </a>
     <a
       href="/settings"
-      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-100"
+      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-gray-100"
     >
       Settings
       <Settings size="14px" />
     </a>
     <a
       href="/"
-      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-800 hover:bg-gray-100"
+      className="flex justify-between items-center gap-x-3.5 py-2 px-3 rounded-lg text-xs font-medium text-gray-800 hover:bg-gray-100"
     >
       Log Out
       <LogOut size="14px" />
