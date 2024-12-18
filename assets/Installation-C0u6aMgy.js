@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-CkxqCPlQ.js";import{useMDXComponents as r}from"./index-BrnU7xv7.js";import{ae as t}from"./index-CQl4qfFO.js";import"./index-DJO9vBfz.js";import"./iframe-CUp6c5er.js";import"../sb-preview/runtime.js";import"./index-DJdX7xnk.js";import"./index-D-8MO0q_.js";import"./index-j_8AUxV0.js";import"./index-DrFu-skq.js";function s(i){const e={code:"code",h1:"h1",h3:"h3",hr:"hr",p:"p",pre:"pre",...r(),...i.components};return n.jsxs(n.Fragment,{children:[`
+import{j as n}from"./jsx-runtime-CkxqCPlQ.js";import{useMDXComponents as r}from"./index-BrnU7xv7.js";import{ae as t}from"./index-CDIBvuQ-.js";import"./index-DJO9vBfz.js";import"./iframe-C85oXkP0.js";import"../sb-preview/runtime.js";import"./index-DJdX7xnk.js";import"./index-D-8MO0q_.js";import"./index-j_8AUxV0.js";import"./index-DrFu-skq.js";function s(i){const e={code:"code",h1:"h1",h3:"h3",hr:"hr",p:"p",pre:"pre",...r(),...i.components};return n.jsxs(n.Fragment,{children:[`
 `,`
 `,n.jsx(t,{title:"Configuration/Installation"}),`
 `,n.jsx(e.h1,{id:"installation",children:"Installation"}),`
