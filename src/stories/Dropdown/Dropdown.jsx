@@ -24,7 +24,7 @@ export const Dropdown = ({ children, trigger, dropRight }) => {
   }, []);
 
   return (
-    <div ref={dropdownRef} className="relative inline-block">
+    <div ref={dropdownRef} className="relative inline-block gap-y-2">
       {/* Custom Trigger */}
       <div onClick={toggleDropdown} className="cursor-pointer">
         {trigger || (
@@ -33,7 +33,7 @@ export const Dropdown = ({ children, trigger, dropRight }) => {
             color="gray"
             className="text-gray-800"
           >
-            Default Trigger
+            Label
             <ChevronDown
               size="14px"
               className={`transition-transform duration-200 ${
@@ -47,7 +47,7 @@ export const Dropdown = ({ children, trigger, dropRight }) => {
       {/* Dropdown Menu */}
       {isOpen && (
         <div
-          className={`absolute border border-gray-200 z-10 transition-[opacity,margin] duration-200 opacity-100 min-w-40 bg-white shadow-md rounded-lg mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 top-10 ${
+          className={`absolute border border-gray-200 z-10 transition-[opacity,margin] duration-200 opacity-100 min-w-40 bg-white shadow-md rounded-lg mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 ${
             dropRight ? "right-0" : "left-0"
           }`}
           role="menu"
