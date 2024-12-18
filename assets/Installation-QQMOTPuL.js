@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-CkxqCPlQ.js";import{useMDXComponents as r}from"./index-BrnU7xv7.js";import{ae as t}from"./index-BcpmOl0Q.js";import"./index-DJO9vBfz.js";import"./iframe-CCTO0KdG.js";import"../sb-preview/runtime.js";import"./index-DJdX7xnk.js";import"./index-D-8MO0q_.js";import"./index-j_8AUxV0.js";import"./index-DrFu-skq.js";function s(i){const e={code:"code",h1:"h1",h3:"h3",hr:"hr",p:"p",pre:"pre",...r(),...i.components};return n.jsxs(n.Fragment,{children:[`
+import{j as n}from"./jsx-runtime-CkxqCPlQ.js";import{useMDXComponents as r}from"./index-BrnU7xv7.js";import{ae as t}from"./index-CQl4qfFO.js";import"./index-DJO9vBfz.js";import"./iframe-CUp6c5er.js";import"../sb-preview/runtime.js";import"./index-DJdX7xnk.js";import"./index-D-8MO0q_.js";import"./index-j_8AUxV0.js";import"./index-DrFu-skq.js";function s(i){const e={code:"code",h1:"h1",h3:"h3",hr:"hr",p:"p",pre:"pre",...r(),...i.components};return n.jsxs(n.Fragment,{children:[`
 `,`
 `,n.jsx(t,{title:"Configuration/Installation"}),`
 `,n.jsx(e.h1,{id:"installation",children:"Installation"}),`
@@ -68,6 +68,6 @@ module.exports = {
 `,n.jsx(e.p,{children:"Add the Preline UI script to the end of your body tag in index.html"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-bash",children:`<script src="./node_modules/preline/dist/preline.js"><\/script>
 `})}),`
-`,n.jsx(e.p,{children:"In any files where you use JS for preline components, import this:"}),`
+`,n.jsx(e.p,{children:"In any files where you use JS for preline components (Popper, etc.) , import this:"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-bash",children:`import "preline/dist/preline";
 `})})]})}function m(i={}){const{wrapper:e}={...r(),...i.components};return e?n.jsx(e,{...i,children:n.jsx(s,{...i})}):s(i)}export{m as default};

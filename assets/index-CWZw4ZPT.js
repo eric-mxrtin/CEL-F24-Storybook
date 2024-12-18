@@ -215,4 +215,4 @@
  * @author: Preline Labs Ltd.
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2024 Preline Labs Ltd.
- */typeof DataTable<"u"&&typeof jQuery<"u"&&require("./plugins/datatable").default;typeof _<"u"&&typeof Dropzone<"u"&&require("./plugins/file-upload").default;typeof noUiSlider<"u"&&require("./plugins/range-slider").default;export{Q as H,ue as a,ve as b};
+ */typeof DataTable<"u"&&typeof jQuery<"u"&&require("./plugins/datatable").default;typeof _<"u"&&typeof Dropzone<"u"&&require("./plugins/file-upload").default;typeof noUiSlider<"u"&&require("./plugins/range-slider").default;export{ue as H,ve as a};
