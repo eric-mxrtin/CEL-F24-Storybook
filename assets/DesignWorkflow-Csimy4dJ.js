@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-CkxqCPlQ.js";import{useMDXComponents as s}from"./index-BrnU7xv7.js";import{ae as i}from"./index-B2n392-C.js";import"./index-DJO9vBfz.js";import"./iframe-C0OCkbiI.js";import"../sb-preview/runtime.js";import"./index-DJdX7xnk.js";import"./index-D-8MO0q_.js";import"./index-j_8AUxV0.js";import"./index-DrFu-skq.js";function o(t){const n={h1:"h1",h3:"h3",p:"p",strong:"strong",...s(),...t.components};return e.jsxs(e.Fragment,{children:[`
+import{j as e}from"./jsx-runtime-CkxqCPlQ.js";import{useMDXComponents as s}from"./index-BrnU7xv7.js";import{ae as i}from"./index-BlUnffmP.js";import"./index-DJO9vBfz.js";import"./iframe-BQMg04Ap.js";import"../sb-preview/runtime.js";import"./index-DJdX7xnk.js";import"./index-D-8MO0q_.js";import"./index-j_8AUxV0.js";import"./index-DrFu-skq.js";function o(t){const n={h1:"h1",h3:"h3",p:"p",strong:"strong",...s(),...t.components};return e.jsxs(e.Fragment,{children:[`
 `,`
 `,e.jsx(i,{title:"Configuration/Design Workflow"}),`
 `,e.jsx(n.h1,{id:"design-workflow",children:"Design Workflow"}),`
