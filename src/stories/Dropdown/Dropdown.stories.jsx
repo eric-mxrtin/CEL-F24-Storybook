@@ -108,9 +108,9 @@ export const DropRight = {
 };
 
 export const CustomChildren = {
-  render: () => (
+  render: (args) => (
     <Dropdown
-    dropRight={true}
+    {...args}
     trigger={
       <Button size="small">
         In Progress
@@ -141,6 +141,9 @@ export const CustomChildren = {
     </a>
   </Dropdown>
   ),
+  args: {
+    dropRight: true,
+  },
   parameters: {
     docs: {
       description: {

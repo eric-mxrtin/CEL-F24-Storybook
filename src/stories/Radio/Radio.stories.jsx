@@ -7,7 +7,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: "Radio Input Element",
+        component: "Radio Group Element",
       },
     },
     layout: "centered",
@@ -15,9 +15,6 @@ export default {
   argTypes: {
     title: {
       description: "Title for the question.",
-    },
-    options: {
-      description: "Radio options passed in as an array of strings",
     },
   },
   tags: ["autodocs"],
